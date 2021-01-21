@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="ExceptionsTests" verbose="1">
+
+	<test name="exceptionTest">
+		<parameter name="browser" value="firefox" />
+		<groups>
+			<run>
+				<include name="disabledTest"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.herokuapp.theinternet.ExceptionsTests" />
+		</classes>
+	</test>
+
+</suite>
